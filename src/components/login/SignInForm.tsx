@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import SocialButton from "./SocialButton";
-import PasswordButton from "./PasswordButton";
+import PasswordInput from "./PasswordInput";
 
 export default function SignInForm() {
   const [visible, setvisible] = useState(false);
@@ -34,7 +34,7 @@ export default function SignInForm() {
           <Label htmlFor="email">Email</Label>
           <Input type="email" id="email" placeholder="Email" />
         </div>
-        <PasswordButton visible={visible} onChange={handleVisible} />
+        <PasswordInput visible={visible} onChange={handleVisible} />
       </div>
 
       <Button
