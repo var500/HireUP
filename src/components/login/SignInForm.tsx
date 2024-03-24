@@ -44,10 +44,7 @@ export default function SignInForm() {
         />
       </div>
 
-      <Button
-        variant={"outline"}
-        className="bg-gradient-to-r from-pink-800 to-pink-600"
-      >
+      <Button variant={"default"}>
         <div className="w-full">
           <p className="text-white">Log In</p>
         </div>
