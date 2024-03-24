@@ -20,7 +20,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex flex-col flex-wrap items-center md:flex-row px-2 py-4 justify-center gap-4 mx-auto">
+      <div className="flex flex-col flex-wrap items-center md:flex-row px-2 py-10 justify-center gap-4 mx-auto">
         <ExploreCard
           heading="For Employees"
           content="Explore Opportunities that match your skills"
