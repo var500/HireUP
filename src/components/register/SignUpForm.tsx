@@ -42,7 +42,7 @@ export default function SignUpForm() {
           Already have an account?
           <Link
             className="ml-2 font-semibold text-blue-500 hover:text-blue-600"
-            href={"/api/auth/signin"}
+            href={"/"}
           >
             Log In
           </Link>

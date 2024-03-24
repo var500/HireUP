@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"h-full flex flex-col justify-between "}>
+      <body className={"flex flex-col h-full justify-between"}>
         <SessionProvider>
           <div className={inter.className}>{children}</div>
         </SessionProvider>
