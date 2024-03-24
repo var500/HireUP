@@ -5,11 +5,13 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import SocialButton from "./SocialButton";
 import PasswordInput from "./PasswordInput";
+import { useSession } from "next-auth/react";
 
 export default function SignInForm() {
   const [visible, setvisible] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { data: session } = useSession();
 
   return (
     <div className="h-[500px] min-w-[300px] md:w-[25%] flex flex-col p-6 justify-between rounded-lg shadow-md border-2  z-[2] bg-white">
