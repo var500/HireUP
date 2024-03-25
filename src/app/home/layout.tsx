@@ -8,8 +8,11 @@ export default function RootLayout({
 }>) {
   return (
     <section className={"flex flex-col h-screen justify-between "}>
-      <Navbar />
-      <div>{children}</div>
+      <div>
+        <Navbar />
+
+        {children}
+      </div>
       <Footer />
     </section>
   );

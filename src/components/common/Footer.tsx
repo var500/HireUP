@@ -1,12 +1,28 @@
 import React from "react";
-
+import { FaFacebook } from "react-icons/fa";
+import {
+  TiSocialFacebook,
+  TiSocialTwitter,
+  TiSocialGithub,
+  TiSocialInstagram,
+  TiSocialGooglePlus,
+} from "react-icons/ti";
+import FooterLogos from "./FooterLogos";
 export default function Footer() {
   return (
-    <div className="flex flex-row w-full flex-wrap bg-gradient-to-r from-purple-800 to-pink-800 p-10 justify-between gap-4">
-      <div className="h-[200px] w-[300px] border-2 p-2">Box 1</div>
-      <div className="h-[200px] w-[300px] border-2 p-2">Box 2</div>
-      <div className="h-[200px] w-[300px] border-2 p-2">Box 3</div>
-      <div className="h-[200px] w-[300px] border-2 p-2">Box 4</div>
+    <div className="flex flex-col gap-4 items-center w-full bg-gradient-to-r from-purple-800 to-pink-800 px-20">
+      <div className="flex flex-col items-center gap-4 p-6">
+        <div className="flex flex-row gap-4 ">
+          <FooterLogos icon={TiSocialFacebook} />
+          <FooterLogos icon={TiSocialInstagram} />
+          <FooterLogos icon={TiSocialTwitter} />
+          <FooterLogos icon={TiSocialGooglePlus} />
+        </div>
+
+        <div className="text-white font-bold text-xs">
+          @Copyright. All rights Reserved
+        </div>
+      </div>
     </div>
   );
 }
