@@ -1,13 +1,10 @@
 import React from "react";
-import Navbar from "@/components/common/Navbar";
-import { Button } from "@/components/ui/button";
 import ExploreCard from "@/components/common/ExploreCard";
 
 export default function HomePage() {
   return (
     <div>
       <div className="flex flex-col gap-4 bg-gradient-to-r from-purple-800 to-pink-800">
-        <Navbar />
         <div className="border-[1px] w-full border-gray-500" />
 
         <div className="h-[200px] flex flex-col  items-center justify-center">
