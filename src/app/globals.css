@@ -73,5 +73,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  .gradient-cherry {
+    @apply bg-gradient-to-b from-gray-300 to-[#AD88C6]
+  }
+  .gradient-blue {
+    @apply bg-gradient-to-b from-blue-300 to-[#7469B6]
+  }
 }
 
