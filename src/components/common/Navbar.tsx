@@ -4,14 +4,18 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { FaPhoenixFramework } from "react-icons/fa";
 import Link from "next/link";
 import DialogDemo from "../newJobs/PostNewDialog";
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const router = useRouter();
   return (
-    <div className="flex flex-row w-full flex-wrap justify-between bg-gradient-to-r from-purple-800 to-pink-800 shadow-lg">
-      <div className="flex flex-row w-full justify-between px-1 md:px-10 mt-4  items-center max-w-[900px] mx-auto text-white font-bold ">
+    <div className="flex flex-row w-full flex-wrap justify-between bg-gradient-to-r from-purple-800 to-pink-800 fixed z-10">
+      <div className="flex flex-row w-full justify-between px-10 my-4 items-center text-white font-bold ">
         {/* logo */}
-        <Link href={"/home"}>
-          <FaPhoenixFramework size={60} />
+        <Link href={"/home"} className="flex flex-row gap-1 items-center">
+          <p className="text-2xl font-bold">HireUp</p>
+          <FaPhoenixFramework size={50} />
         </Link>
 
         {/* nav menu */}
@@ -32,10 +36,26 @@ export default function Navbar() {
         </ul>
 
         {/* profile */}
-        <Avatar className="hover:cursor-pointer">
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        <div className="flex flex-row gap-4 ">
+          <Button
+            variant={"outline"}
+            className="bg-transparent"
+            onClick={() => router.push("/signin")}
+          >
+            Login
+          </Button>
+          <Button
+            variant={"outline"}
+            className="bg-transparent"
+            onClick={() => router.push("/signup")}
+          >
+            Signup
+          </Button>
+          {/* <Avatar className="hover:cursor-pointer">
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar> */}
+        </div>
       </div>
     </div>
   );

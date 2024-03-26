@@ -42,7 +42,7 @@ export default function SignUpForm() {
           Already have an account?
           <Link
             className="ml-2 font-semibold text-blue-500 hover:text-blue-600"
-            href={"/"}
+            href={"/signin"}
           >
             Log In
           </Link>
@@ -53,13 +53,26 @@ export default function SignUpForm() {
       </div>
 
       <div className="flex flex-col gap-4 w-full">
-        <Input
-          type="text"
-          id="text"
-          value={username}
-          placeholder="Username"
-          onChange={(e) => setUsername(e.target.value)}
-        />
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <Input
+              type="text"
+              id="text"
+              value={username}
+              placeholder="First Name"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div>
+            <Input
+              type="text"
+              id="text"
+              value={username}
+              placeholder="First Name"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+        </div>
         <Input
           type="email"
           id="email"
