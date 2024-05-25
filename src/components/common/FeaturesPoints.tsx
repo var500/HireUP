@@ -11,9 +11,9 @@ export default function FeaturesPoints({
   contentBottom: string;
 }) {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-2 md:gap-4">
       <div>{<Logo size={30} />}</div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:gap-4">
         <p className="text-base md:text-xl font-semibold">{contentTop}</p>
         <p className="text-xs md:text-sm font-normal">{contentBottom}</p>
       </div>

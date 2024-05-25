@@ -3,6 +3,7 @@ import { SessionProvider } from "next-auth/react";
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/common/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
@@ -24,7 +25,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={"flex flex-col h-screen justify-between "}>
         <SessionProvider>
-          <div className={roboto_mono.className}>{children}</div>
+          <div className={roboto_mono.className}>
+            <Navbar />
+            {children}
+          </div>
         </SessionProvider>
       </body>
     </html>

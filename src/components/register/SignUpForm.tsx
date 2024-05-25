@@ -35,6 +35,15 @@ export default function SignUpForm() {
     }
   }, [password, retype]);
 
+  const handleLogin = () => {
+    const data = {
+      fname: fname,
+      lname: lname,
+      email: email,
+      password: password,
+    };
+  };
+
   return (
     <div className="h-fit min-w-[300px] md:w-[25%] flex flex-col p-6 justify-between rounded-lg shadow-md border-2  z-[2] bg-white">
       <div className="flex flex-col gap-2 py-2 md:py-4">
@@ -119,7 +128,11 @@ export default function SignUpForm() {
         </div>
       </div>
 
-      <Button variant={"default"} disabled={passwordError}>
+      <Button
+        variant={"default"}
+        disabled={passwordError}
+        onSubmit={handleLogin}
+      >
         <div className="w-full">
           <p className="text-white">Log In</p>
         </div>

@@ -18,7 +18,7 @@ export default function ExploreCard({
 }) {
   return (
     <div
-      className={`flex flex-col justify-between w-[400px] h-[550px]  rounded-lg shadow-lg p-4 hover:cursor-pointer hover:scale-105 transition ${
+      className={`flex flex-col justify-between w-[300px] md:w-[400px] h-[250px] md:h-[550px]  rounded-lg shadow-lg p-2 md:p-4 hover:cursor-pointer hover:scale-105 transition ${
         color == "blue" ? "gradient-blue" : "gradient-cherry"
       }`}
     >
@@ -34,7 +34,7 @@ export default function ExploreCard({
       <Image
         src={image}
         alt="workers"
-        className="h-[300px] w-full object-contain"
+        className="h-[100px] md:h-[300px] w-full object-contain"
       />
 
       <div className="w-full">
