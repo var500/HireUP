@@ -36,8 +36,8 @@ export default function SignUpForm() {
   }, [password, retype]);
 
   return (
-    <div className="h-[550px] min-w-[300px] md:w-[25%] flex flex-col p-6 justify-between rounded-lg shadow-md border-2  z-[2] bg-white">
-      <div className="flex flex-col gap-2">
+    <div className="h-fit min-w-[300px] md:w-[25%] flex flex-col p-6 justify-between rounded-lg shadow-md border-2  z-[2] bg-white">
+      <div className="flex flex-col gap-2 py-2 md:py-4">
         <p className="text-3xl md:text-4xl font-bold">Sign Up</p>
         <p className="text-[10px] md:text-[12px] font-semibold">
           Already have an account?
@@ -102,7 +102,7 @@ export default function SignUpForm() {
         ) : null}
       </div>
 
-      <div className="flex flex-col gap-2 w-full ">
+      <div className="flex flex-col gap-2 w-full py-2 md:py-4">
         <div className="flex flex-row gap-4 w-full items-center">
           <FaCheckCircle color={`${isLengthValid(password) ? "green" : ""}`} />
           <p className="text-sm">Minimum length of 8 characters</p>
@@ -119,7 +119,7 @@ export default function SignUpForm() {
         </div>
       </div>
 
-      <Button variant={"default"}>
+      <Button variant={"default"} disabled={passwordError}>
         <div className="w-full">
           <p className="text-white">Log In</p>
         </div>
