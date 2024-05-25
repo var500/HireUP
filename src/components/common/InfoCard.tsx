@@ -3,7 +3,7 @@ import Image from "next/image";
 import relax from "@/assets/relax.jpg";
 export default function InfoCard() {
   return (
-    <div className="flex flex-col h-screen w-full justify-center px-24 py-12">
+    <div className="flex flex-col h-screen w-full justify-center px-10 md:px-24 py-12">
       <div className="relative flex flex-col justify-between h-full w-full ">
         <Image
           src={relax}
