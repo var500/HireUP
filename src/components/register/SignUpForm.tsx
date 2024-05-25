@@ -8,7 +8,8 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function SignUpForm() {
   const [visible, setvisible] = useState(false);
-  const [username, setUsername] = useState("");
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [retype, setRetype] = useState("");
@@ -58,18 +59,18 @@ export default function SignUpForm() {
             <Input
               type="text"
               id="text"
-              value={username}
+              value={fname}
               placeholder="First Name"
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={(e) => setFname(e.target.value)}
             />
           </div>
           <div>
             <Input
               type="text"
               id="text"
-              value={username}
-              placeholder="First Name"
-              onChange={(e) => setUsername(e.target.value)}
+              value={lname}
+              placeholder="Last Name"
+              onChange={(e) => setLname(e.target.value)}
             />
           </div>
         </div>
