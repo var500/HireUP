@@ -25,10 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={"flex flex-col h-screen justify-between "}>
         <SessionProvider>
-          <div className={roboto_mono.className}>
-            <Navbar />
-            {children}
-          </div>
+          <div className={roboto_mono.className}>{children}</div>
         </SessionProvider>
       </body>
     </html>

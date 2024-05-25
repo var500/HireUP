@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -29,9 +30,11 @@ export default function DialogDemo() {
         <PostJobCard />
         <AddressCard />
         <div className="flex flex-row w-full justify-between mt-10 gap-4">
-          <Button className="w-full" variant={"outline"} type="button">
-            Cancel
-          </Button>
+          <DialogClose asChild>
+            <Button className="w-full" variant={"outline"} type="button">
+              Cancel
+            </Button>
+          </DialogClose>
           <Button className="w-full" type="submit">
             Finish
           </Button>

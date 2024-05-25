@@ -17,8 +17,9 @@ import FeatureCard from "@/components/common/FeatureCard";
 import { CarouselSize } from "@/components/common/ScrollCarousel";
 export default function HomePage() {
   return (
-    <div>
-      <div className="relative h-[200px] md:h-fit flex flex-col items-center justify-center mt-10 sm:mt-16">
+    <>
+      <Navbar />
+      <div className="h-[250px] md:h-screen flex flex-col items-center justify-center ">
         <video autoPlay loop muted className="w-screen opacity-40">
           <source src="home.mp4"></source>
         </video>
@@ -36,7 +37,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex flex-col flex-wrap items-center md:flex-row px-2 py-4 md:py-10 justify-center gap-10 mx-auto">
+      <div className="flex flex-col flex-wrap items-center md:flex-row px-2 py-4 md:py-0 justify-center gap-10 mx-auto">
         <ExploreCard
           image={workers}
           color="cherry"
@@ -56,6 +57,6 @@ export default function HomePage() {
       <InfoCard />
 
       <FeatureCard />
-    </div>
+    </>
   );
 }
