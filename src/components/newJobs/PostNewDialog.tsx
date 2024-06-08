@@ -20,7 +20,7 @@ export default function PostJobDialog() {
       <DialogTrigger asChild>
         <p className="hover:cursor-pointer hover:text-black">Post a Job</p>
       </DialogTrigger>
-      <DialogContent className="max-h-[600px] sm:max-w-[600px] overflow-scroll overflow-x-hidden w-[400px]">
+      <DialogContent className="max-h-[600px] sm:max-w-[600px] overflow-scroll overflow-x-hidden w-[500px]">
         <DialogHeader className="flex w-full justify-center items-center p-10">
           <DialogTitle className="uppercase text-2xl">
             Job Post Form
