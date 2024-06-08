@@ -14,13 +14,13 @@ import { Label } from "@/components/ui/label";
 import { PostJobCard } from "./PostJobCard";
 import { AddressCard } from "./AddressCard";
 
-export default function DialogDemo() {
+export default function PostJobDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <p className="hover:cursor-pointer hover:text-black">Post a Job</p>
       </DialogTrigger>
-      <DialogContent className="max-h-[600px] sm:max-w-[600px] overflow-scroll overflow-x-hidden ">
+      <DialogContent className="max-h-[600px] sm:max-w-[600px] overflow-scroll overflow-x-hidden w-[400px]">
         <DialogHeader className="flex w-full justify-center items-center p-10">
           <DialogTitle className="uppercase text-2xl">
             Job Post Form

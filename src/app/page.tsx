@@ -19,7 +19,8 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <div className="h-[250px] md:h-screen flex flex-col items-center justify-center ">
+
+      <div className=" flex flex-col items-center justify-center ">
         <video autoPlay loop muted className="w-screen opacity-40">
           <source src="home.mp4"></source>
         </video>
@@ -31,13 +32,13 @@ export default function HomePage() {
           <p className="text-base md:text-5xl font-bold flex flex-wrap mr-2">
             Connecting <span className="ml-4 text-pink-600">Talents</span>
           </p>
-          <p className="text-xs md:text-lg font-semibold ">
+          <p className="hidden md:flex text-xs md:text-lg font-semibold ">
             Find a job that fits your skills or needs
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col flex-wrap items-center md:flex-row px-2 py-4 md:py-0 justify-center gap-10 mx-auto">
+      <div className="flex flex-col flex-wrap items-center md:flex-row px-2 py-4 md:py-0 justify-center gap-10 mx-auto mt-4">
         <ExploreCard
           image={workers}
           color="cherry"
